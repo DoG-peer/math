@@ -1,0 +1,53 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+
+\begin{document}
+\begin{prob}
+  群、環、体の定義を述べよ。
+\end{prob}
+
+\begin{prob}
+$n$を正の整数とする。$\Zn= \left\{ 0,1,\dots, n-1 \right\}$とおく。通常の足し算を行った後$n$で割った余りをとるという演算で$\Zn$が群になることを示せ。
+\end{prob}
+
+\begin{prob}
+  $\Zn$に積を定義し環にせよ。さらに、$n$が素数のとき、体になることを示せ。（積を上手く定義しないと体にはならない。）
+\end{prob}
+
+\begin{prob}
+  それぞれの場合の$n$に対して、$\Zn$での方程式を解け。
+  \begin{enumerate}
+    \item $n=2$のとき、$x^2 + 1 = 0$.
+    \item $n=3$のとき、$x^2 + 1 = 0$.
+    \item $n=17$のとき、$x^4 + 1 = 0$.
+    \item $n=7$のとき、$x y = 4$.
+    \item $n=8$のとき、$x y = 4$.
+  \end{enumerate}
+\end{prob}
+\end{document}
+
