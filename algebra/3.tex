@@ -1,0 +1,70 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+\newcommand{\midbar}{\ \middle| \ }
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+\newcommand{\Zp}{\mathbb{Z}/p\mathbb{Z}}
+
+\begin{document}
+\begin{prob}
+  集合$\left\{ 0,1 \right\}$に和と積を
+  \begin{align*}
+    0+0 = 1+1 = 0 \\
+    0+1 = 1+0 = 1 \\
+    0\times 0 = 1\times 0 = 0\times 1=0 \\
+    1\times 1 =1
+  \end{align*}
+  で定める。体になることを示せ。（これは$\Z/2\Z$に等しい。これを$F_2$と書く。）
+\end{prob}
+
+\begin{prob}
+  $F_2^n$の要素の個数を求めよ。
+  また、部分ベクトル空間
+  \[A = \left\{ (a_1,\dots, a_n) \in F_2^n \midbar a_1+\dots+a_n = 0 \right\} \]
+  の要素の個数を求めよ。
+  さらに、$n=3$のときの$A$の要素をすべて書け。
+\end{prob}
+
+\begin{prob}
+  $p$が素数のとき、$\Zp$は体になった。これを$F_p$と書く。このとき、$F_p^n$と
+  \[A = \left\{ (a_1,\dots, a_n) \in F_p^n \midbar a_1+\dots+a_n = 0 \right\} \]
+  の要素の個数を求めよ。
+\end{prob}
+
+\begin{prob}
+  $\R^3$の部分ベクトル空間になっているものをすべて選べ。また、部分ベクトル空間でないものについては、その理由を述べよ。
+
+  \begin{enumerate}
+    \item $\left\{ (x,y,z)\in\R^3\midbar x+2y+3z=0 \right\}$.
+    \item $\left\{ (x,y,z)\in\R^3\midbar x+y=y+z = 0 \right\}$.
+    \item $\left\{ (x,y,z)\in\R^3\midbar x+y^2+z^3=0 \right\}$.
+    \item $\left\{ (x,y,z)\in\R^3\midbar xy+yz+zx=0 \right\}$.
+    \item $\left\{ (x,y,z)\in\R^3\midbar xyz=0 \right\}$.
+    \item $\left\{ (x,y,z)\in\R^3\midbar x^2+y^2+z^2=0 \right\}$.
+  \end{enumerate}
+\end{prob}
+\end{document}
+
