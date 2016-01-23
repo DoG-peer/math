@@ -1,0 +1,65 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+\newcommand{\midbar}{\ \middle| \ }
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+
+\begin{document}
+$R$を可換環、$F$を体とする。
+\begin{prob}
+  $R$加群、$F$ベクトル空間の定義を述べよ。
+\end{prob}
+
+\begin{prob}
+  $n$個の$F$の元の列$\left( a_1,\dots, a_n \right)$($a_i\in F$)の集合を$F^n$と書く。和とスカラー倍を次のように定める。
+  \begin{align}
+\left( a_1,\dots, a_n \right) + \left( b_1,\dots, b_n \right) &= \left(a_1 + b_1,\dots, a_n + b_n \right), \notag \\
+  a\left( x_1,\dots, x_n \right) &= \left(ax_1,\dots, ax_n \right) \notag
+\end{align}
+で定める。
+  $F^n$が$F$ベクトル空間であることを示せ。
+\end{prob}
+
+\begin{prob}
+  \begin{align}
+  A &= \left\{ (a_1,\dots, a_n) \in F^n \midbar a_1+\dots+a_n = 0 \right\} \notag \\
+  B &= \left\{ (a_1,\dots, a_n) \in F^n \midbar a_1+\dots+a_n = 1 \right\} \notag
+  \end{align}
+  とおく。
+  \begin{enumerate}
+    \item 部分ベクトル空間の定義を述べよ。
+    \item $A$が$F^n$の部分ベクトル空間であることを示せ。
+    \item $B$が$F^n$の部分ベクトル空間でないことを示せ。
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $\R$は実数体、$\C$は複素数体。
+
+  $\C$が$\R$ベクトル空間になることを示せ。ただし、和は$\C$の和、スカラー倍は、$a\in\R$, $x\in \C$に対しそのスカラー倍を$ax$とすることで定めるものとする。
+\end{prob}
+\end{document}
+
