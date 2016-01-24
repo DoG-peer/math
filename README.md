@@ -14,6 +14,15 @@ CC0 1.0 Universal。ご自由にどうぞ。
 ### 定義を問う問題について
 定義が書籍や講義により異なる場合があるが、解答者が習った、もしくは、正しいと考える定義が答えられることを期待している。故に、解答者の答えた定義がなんらかの書籍で定義されているなら正解であり、解答者により異なるものになっても構わないと考えている。
 
+## TeXファイルのコンパイル（要検証）
+ubuntuで書いています。必要なものはapt-getコマンドでインストールします。
+```
+sudo apt-get install texlive-lang-cjk texlive-pstricks texlive-fonts-recommended texlive-lang-japanese texlive-luatex texlive xzdec
+```
+コンパイルは
+`ptex2pdf -u -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" ファイル名`
+で行っております。
+
 ## 関わり方
 プルリクエストを待っています。githubのアカウントが必要になります。（無料）new fileと書かれたボタンを押したり、鉛筆のアイコンのボタンで編集できます。編集が終わったら、下のコミットメッセージ欄を埋めて下の緑のボタンを押して・・・という手順でできるので、gitが分からなくても大丈夫です。編集してもすぐには反映されず、リクエスト内容を確認したり、相談したりした後、良ければ反映することになります。
 
