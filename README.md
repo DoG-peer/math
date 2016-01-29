@@ -23,6 +23,12 @@ sudo apt-get install texlive-lang-cjk texlive-pstricks texlive-fonts-recommended
 `ptex2pdf -u -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" ファイル名`
 で行っております。
 
+windowsでぽコンパイルする場合は、
+`uplatex ファイル名`
+でdviファイルができるので、さらに、
+`dvipdfmx dviファイル名`
+でpdfファイルができます。
+
 ## 関わり方
 プルリクエストを待っています。githubのアカウントが必要になります。（無料）new fileと書かれたボタンを押したり、鉛筆のアイコンのボタンで編集できます。編集が終わったら、下のコミットメッセージ欄を埋めて下の緑のボタンを押して・・・という手順でできるので、gitが分からなくても大丈夫です。編集してもすぐには反映されず、リクエスト内容を確認したり、相談したりした後、良ければ反映することになります。
 
