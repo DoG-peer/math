@@ -23,7 +23,7 @@ sudo apt-get install texlive-lang-cjk texlive-pstricks texlive-fonts-recommended
 `ptex2pdf -u -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" ファイル名`
 で行っております。
 
-windowsでぽコンパイルする場合は、
+windowsでコンパイルする場合は、
 `uplatex ファイル名`
 でdviファイルができるので、さらに、
 `dvipdfmx dviファイル名`
