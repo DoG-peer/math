@@ -1,0 +1,71 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+\newcommand{\midbar}{\ \middle| \ }
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+\newcommand{\Zp}{\mathbb{Z}/p\mathbb{Z}}
+
+\begin{document}
+$\R$を実数体、$F$を体、$V$を$F$ベクトル空間とする。
+\begin{prob}
+  $v_1,\dots,v_n \in V$が、（$F$上）一次独立であることの定義を述べよ。
+\end{prob}
+
+\begin{prob}
+  $v_1,v_2,v_3,v_4\in \R^4$を
+  \[
+    v_1 = \begin{pmatrix}
+      1 \\ 0 \\ 1 \\ 0
+    \end{pmatrix}
+    , v_2 = \begin{pmatrix}
+      0 \\ 1 \\ 0 \\ 1
+    \end{pmatrix}
+    , v_3 = \begin{pmatrix}
+      -1\\ 1 \\ -1 \\ 1
+    \end{pmatrix}
+    , v_4 = \begin{pmatrix}
+      1 \\ -1 \\ -1 \\ 1
+    \end{pmatrix}
+  \]
+  とする。次のうち、$\R$上一次独立になるベクトルの組をすべて選べ。
+  \begin{enumerate}
+    \item $v_1,v_2$
+    \item $v_1,v_2,v_3$
+    \item $v_2,v_3$
+    \item $v_1,v_2,v_4$
+    \item $v_1,v_2,v_3,v_4$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $u=(a,b), v=(c,d)\in \R^2$が$\R$上一次独立である必要十分条件が$ad-bc \not=0$であることを示せ。（ヒント：対偶）
+\end{prob}
+
+\begin{prob}
+  1と$\sqrt{2}$が$\Q$上一次独立であるとはどういうことか、一次独立の定義に従い述べよ。また、これを示せ。
+\end{prob}
+\end{document}
+
