@@ -1,0 +1,86 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+\newcommand{\midbar}{\ \middle| \ }
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+\newcommand{\Zp}{\mathbb{Z}/p\mathbb{Z}}
+
+\begin{document}
+$\N$は自然数全体のなす集合（0は含まない）、$\Z$は整数全体のなす集合、$\R$は実数全体のなす集合、
+$\R_{>0}$を正の実数の集合とする。
+\begin{prob}
+  写像、単射、全射、全単射の定義を述べよ。また、次の写像$f:\Z\to\Z$が全単射、単射、全射、いずれでもない、そもそも写像になっていない、のどれになっているか答えよ。
+  \begin{enumerate}
+    \item $f(x)=x+a$. ただし、$a$は整数。
+    \item $f(x)=\sqrt{x^2+4}$.
+    \item
+      \[
+        f(x)=\begin{cases}
+          n/2 & (n\text{が偶数}) \\
+          n & (n\text{が奇数})
+        \end{cases}
+      \]
+    \item
+      \[
+        f(x)=\begin{cases}
+          n^3 & (n\text{が偶数}) \\
+          2n & (n\text{が奇数})
+        \end{cases}
+      \]
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  次の関数$f$と定義域$A$に対し、値域を答えよ。
+  \begin{enumerate}
+    \item $f(x)=\sin x$, $A=[-\pi/6, 3\pi/4]$.
+    \item $f(x)=\log x$, $A=(0, 1]$.
+    \item $f(x)=1/x$, $A=(-3,4)\setminus{\{0\}}$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  次の関数$f$, $g$の合成$g\circ f$を計算せよ。
+  \begin{enumerate}
+    \item $f(x)=2x+1$, $g(x)=x^2-1$.
+    \item $f(x)=2\log x$, $g(x)=a^x$. ただし、$a>0$とする。
+    \item
+      \begin{align*}
+        f(x)&=\frac{ax+b}{cx+d}\\
+        g(x)&=\frac{dx-b}{-cx+a}.
+      \end{align*}
+      ただし、$ad-bc \not= 0$とする。
+  \end{enumerate}
+
+\end{prob}
+
+\begin{prob}
+  全単射$f:\N\to\N\times\N$を構成し、それが全単射になっていることを証明せよ。
+\end{prob}
+
+
+\end{document}
