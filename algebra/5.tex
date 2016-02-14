@@ -1,0 +1,85 @@
+\documentclass[uplatex]{jsarticle}
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{ascmac}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\numberwithin{equation}{section}
+\newtheorem{prob}[section]{問題}
+
+\newcommand{\midbar}{\ \middle| \ }
+
+\newcommand{\mf}[1]{{\mathfrak{#1}}}
+\newcommand{\bm}[1]{{\mathbf{#1}}}
+\newcommand{\bb}[1]{{\mathbb{#1}}}
+\newcommand{\mca}[1]{{\mathcal{#1}}}
+\newcommand{\msc}[1]{{\mathscr{#1}}}
+\newcommand{\mm}[1]{\mathop{\mathrm{#1}}\nolimits}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\Zn}{\mathbb{Z}/n\mathbb{Z}}
+\newcommand{\Zp}{\mathbb{Z}/p\mathbb{Z}}
+
+\begin{document}
+$\R$を実数体、$F$を体、$V$を有限次元$F$ベクトル空間とする。
+\begin{prob}
+  $v_1,v_2,v_3,v_4\in \R^3$を
+  \[
+    v_1 = \begin{pmatrix}
+      1 \\ 0 \\ -1
+    \end{pmatrix}
+    , v_2 = \begin{pmatrix}
+      2 \\ -1 \\ -1
+    \end{pmatrix}
+    , v_3 = \begin{pmatrix}
+      1 \\ 2 \\ -3
+    \end{pmatrix}
+    , v_4 = \begin{pmatrix}
+      1 \\ 1 \\ 1
+    \end{pmatrix}
+  \]
+  とする。次に挙げるベクトルの組に対して、それが生成する部分空間の次元を答えよ。
+  \begin{enumerate}
+    \item $v_1,v_2$
+    \item $v_1,v_2,v_3$
+    \item $v_1,v_2,v_3,v_4$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  次の$\R^4$の部分空間について、基底を挙げ、それが実際に基底になっていることを示し、その部分空間の次元を答えよ。
+  \begin{enumerate}
+    \item $\left\{ (x,y,z,w)\in\R^4 \midbar x+y+z+w=0 \right\}$
+    \item $\left\{ (x,y,z,w)\in\R^4 \midbar x+y=z+w=0 \right\}$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $V_1$,$V_2$を$V$の部分空間とする。
+  \begin{enumerate}
+    \item $V_1+V_2$の定義を述べよ。
+    \item $V_1\cap V_2$が$V$の部分空間になることを示せ。
+    \item $V_1+V_2$の次元を$V_1$,$V_2$,$V_1\cap V_2$の次元で書き表せ。（答えだけでよい）
+    \item $V_1\cup V_2$は必ずしも$V$の部分空間になるとは限らない。反例を挙げ、反例になっていることを示せ。
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $n$を非負整数とする。$V_n$を次数$n$以下の$x$の実数係数多項式のなすベクトル空間とする。
+  つまり、$V_n=\left\{ a_nx^n+a_{n-1}x^{n-1}+\dots+ a_0\midbar a_0,\dots,a_n\in\R \right\}$とする。
+  \begin{enumerate}
+    \item $V_n$の次元を求めよ。
+    \item $V_n$の部分空間$U_n=\left\{f(x)\in V_n\midbar f(x)\text{は偶関数}\right\}$の次元を求めよ。
+    \item $a\in\R$とする。$V_n$の部分空間$W_n=\left\{f(x)\in V_n\midbar f(a)=0\right\}$の次元を求めよ。
+  \end{enumerate}
+\end{prob}
+\end{document}
+
